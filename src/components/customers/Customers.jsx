@@ -46,7 +46,6 @@ const Customers = () => {
             pt: {xs:"42px", sm:"40px"},
             textAlign:{xs:"center"},
             color: "white"
-            //</div>m: {xs:"0-auto", sm:"40px"}
           }}
         >
           Confian en Nosotros
@@ -70,6 +69,17 @@ const Customers = () => {
               }
 
         </Box>
+
+        <Typography gutterBottom variant="h4" 
+          component="div"
+          sx={{
+            pt: {xs:"42px", sm:"40px"},
+            textAlign:{xs:"center"},
+            color: "white"
+          }}
+        >
+          Nuestros parthers
+        </Typography>            
       </div>
 
     </div>

@@ -5,7 +5,7 @@ const CustomerCard = ({imag}) => {
   return (
     <Card
           sx={{
-            maxWidth: 350,
+            maxWidth: {xs: 130, md:200},
             //height:350,
             m: "auto",
             backgroundColor: "transparent",

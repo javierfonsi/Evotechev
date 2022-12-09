@@ -36,7 +36,8 @@ const Contact = () => {
       email: x.email
       };
 
-      emailjs.send('service_rxdex6n','template_dcomid5', templateParams, '_xNTJSBnYLKp9i9sc')
+      //emailjs.send('service_rxdex6n','template_dcomid5', templateParams, '_xNTJSBnYLKp9i9sc')
+      emailjs.send('service_3k547da','template_hj1jg05', templateParams, 'NnagG_4iDnNH6SIyl')
   	  .then((response) => { console.log('SUCCESS!', response.status, response.text);
         }, (err) => { console.log('FAILED...', err);
   	  });
@@ -82,7 +83,9 @@ const Contact = () => {
             <TextField className='text-field' 
                 type="text" 
                 label="Ingresa tu información" 
-                variant="outlined" 
+                variant="outlined"
+                multiline
+                maxRows={4} 
                 value={values.info || ""} 
                 onChange={ (e)=>{
                   setFieldValue( "info" , e.target.value )
