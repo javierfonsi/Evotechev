@@ -35,10 +35,11 @@ export default function BaseLayout() {
                      mt: "0px"
                     }} width={'100%'}>
                   <Typography sx={{fontSize: {xs:"1.4em", sm:"1.7em", md:"2.1em", lg:"2.6em"} }}>
-                     Contactenos
+                     Contactanos
                   </Typography>
                   <Footer/>
-                  <p>&copy; 2022 Evotech Ingenieria. All Rights reserved.</p>
+                  <p>&copy; 2022 Evotech Ingenieria. All Rights reserved. <a href={'"https://fullstack-javierfonseca.netlify.app/"'}>JF</a></p>
+                  {/*<p>created by <a href={'"https://fullstack-javierfonseca.netlify.app/"'}>Javier Fonseca</a></p>*/}
                </Box>
             </Grid>
          </Grid>
