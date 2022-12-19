@@ -38,8 +38,8 @@ export default function BaseLayout() {
                      Contactanos
                   </Typography>
                   <Footer/>
-                  <p>&copy; 2022 Evotech Ingenieria. All Rights reserved. <a href={'"https://fullstack-javierfonseca.netlify.app/"'}>JF</a></p>
-                  {/*<p>created by <a href={'"https://fullstack-javierfonseca.netlify.app/"'}>Javier Fonseca</a></p>*/}
+                  <p>&copy; 2022 Evotech Ingenieria. All Rights reserved. </p>
+                  <a href={"https://fullstack-javierfonseca.netlify.app/"} target="blank" style={{fontSize:".7em", paddingTop:"0px"}}> 2022 Javier Fonseca</a>
                </Box>
             </Grid>
          </Grid>
