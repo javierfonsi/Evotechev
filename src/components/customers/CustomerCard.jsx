@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card } from "@mui/material";
+import { Box, Card } from "@mui/material";
 
 const CustomerCard = ({imag}) => {
   return (
@@ -10,12 +10,21 @@ const CustomerCard = ({imag}) => {
             m: "auto",
             backgroundColor: "transparent",
             color: "white", 
-            border:"none"
+            border:"none",
           }}
         >
 
-        <img src={imag?.imgPath} alt={imag?.label} />
+          <Box sx={{ display: {xs: "none", md:"flex"}}}>
+            <img 
+            src={imag?.imgPath} alt={imag?.label}
+             />
+          </Box>
 
+          <Box sx={{ display: {xs: "flex", md:"none"}}}>
+            <img 
+            src={imag?.imgSmall} alt={imag?.label}
+             />
+          </Box>
         </Card>
   )
 }

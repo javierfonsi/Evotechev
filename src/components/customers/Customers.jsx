@@ -10,15 +10,18 @@ import CustomerCard from './CustomerCard';
 const imgCust = [
   {
     label: "entel",
-    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1669851871/evotech/Custommers/entel-130x130-rbg_ricfyg.png"
+    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1669851871/evotech/Custommers/entel-130x130-rbg_ricfyg.png",
+    imgSmall: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671309817/evotech/Custommers/entel-110x110_bmfcma.png"
   },
   {
     label: "movistar",
     imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1669851871/evotech/Custommers/movistar_130x130-rbg_t2dyki.png",
+    imgSmall: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671309817/evotech/Custommers/movistar_110x110_mmtzlo.png"
   },
   {
     label: "claro",
-    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1669851871/evotech/Custommers/claro_130x130-rbg_kkzmmh.png"              
+    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1669851871/evotech/Custommers/claro_130x130-rbg_kkzmmh.png",
+    imgSmall: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671309817/evotech/Custommers/claro_110x110_foua4c.png"
   }
 ]
 

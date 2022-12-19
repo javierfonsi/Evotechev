@@ -8,7 +8,7 @@ const texts = [
   {
     id:1,
     title: "Somos",
-    text: "Una compañía colombiana, con experiencia en el area RF, constituida por Ingenieros especializados en diferentes áreas con un objetivo común: Unir nuestro conocimiento y experiencia para proporcionar soluciones de ingeniería integrales, innovadoras y de alta calidad.",
+    text: "Una compañía colombiana, con experiencia en el campo RF, constituida por Ingenieros especializados en diferentes áreas con un objetivo común: Unir nuestro conocimiento y experiencia para proporcionar soluciones de ingeniería integrales, innovadoras y de alta calidad.",
   },
   {
     id:2,
@@ -18,7 +18,7 @@ const texts = [
   {
     id:3,
     title: "Nuestra propuesta de valor",
-    text: "Consiste de un equipo joven, unas directrices claras y unas perspectivas favorables, las cuales hacen de EVOTECH, una organización que se apoya en la convicción que la calidad y el servicio son el objetivo de todos y cada uno de los componentes de nuestra organización. La preocupación por satisfacer en todo momento las necesidades de nuestros clientes, se ve reflejada en la amplia gama de soluciones profesionales ofrecidas por nuestra empresa en ingeniería civil, telecomunicaciones, eléctrica y electrónica."
+    text: "Consiste de un equipo experto con directrices claras, así como la convicción que la calidad y el servicio son el objetivo de todos y cada uno de los componentes de nuestra organización. La preocupación por satisfacer en todo momento las necesidades de nuestros clientes, se ve reflejada en la amplia gama de soluciones profesionales ofrecidas por nuestra empresa en ingeniería civil, telecomunicaciones, eléctrica y electrónica."
   }
 ]
 
@@ -30,8 +30,9 @@ const About = () => {
         backgroundImage: `url(https://res.cloudinary.com/dzkp92nfz/image/upload/v1670453185/evotech/Nosotros/AboutR_J_cmjxgz.jpg)`,
         width: "100%",
         backgroundPosition: "center",
+        opacity: .85,
         backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
+        backgroundRepeat: "no-repeat"
       }}
     >
       <Box 
@@ -39,9 +40,12 @@ const About = () => {
           maxWidth: 1090,
           m: "auto",
           backgroundColor: "transparent",
-          display:{ xs: "block", md:"flex" },
+          display: {xs:"flex"},
+          flexDirection:{xs:"column", md:"row"},
+          alignItems:"center",
           alignContent:"space-around",
-          pt:10,
+          //border: "solid 2px red",
+          pt: { xs:"10px", md:"45px", lg:"55px" },
           pb:10,
           height: {md:"80vh"}
         }}>
