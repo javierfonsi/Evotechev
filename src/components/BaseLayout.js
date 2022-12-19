@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Routes } from "react-router-dom";
-import {Box, Grid} from "@mui/material";
+import {Box, Grid, Typography} from "@mui/material";
 import MessageAppBar from "./common/MessageAppBar"
 //import './BaseLayout.css'
 import Home from "./home/Home"
@@ -8,6 +8,7 @@ import About from "./about/About"
 import Portfolio from "./portfolio/Portfolio"
 import Contact from "./contact/Contact"
 import Customers from "./customers/Customers"
+import Footer from './common/Footer';
 
 export default function BaseLayout() {
 
@@ -29,25 +30,15 @@ export default function BaseLayout() {
             </Grid>
             <Grid item>
                <Box component={'footer'} display={'flex'} flexDirection={'column'} alignItems={'center'}
-                    p={'0'} m="0" sx={{opacity: 0.7}} width={'100%'}>
-                                         CONTACTENOS
-                     <p>Carrera 89A Nº 22A-22</p>
-                     <p> +57 3142985001 </p>
-                     <p> +57 3058175019 </p>
-                     <p>+57 3108126624</p>
-                     <p>info@evotechingenieria.com</p>
-                     <p>Bogotá - Colombia</p>
-                     <p>&copy; 2022 Evotech Ingenieria. All Rights reserved.</p>
-                  {/*<Typography sx={{
-                     fontSize: {xs:"1em", sm:"1.7em", md:"2.1em", lg:"2.6em"},
-                     color:"white",
-                     //position:"absolute",
-                     //top:{ xs:"40%", sm:"25%", md:"40%"},
-                     //left:{ xs:"5%", sm:"12%", lg:"25%"},
-                     //right:{ xs:"5%", sm:"10%"},
-                     }}> 
-
-                  </Typography>*/}
+                    sx={{opacity: 0.7,
+                     pt:"10px",
+                     mt: "0px"
+                    }} width={'100%'}>
+                  <Typography sx={{fontSize: {xs:"1.4em", sm:"1.7em", md:"2.1em", lg:"2.6em"} }}>
+                     Contactenos
+                  </Typography>
+                  <Footer/>
+                  <p>&copy; 2022 Evotech Ingenieria. All Rights reserved.</p>
                </Box>
             </Grid>
          </Grid>
