@@ -1,8 +1,6 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
-//import { CardContent } from '@mui/material';
-
 
 const Footer = () => {
   return (
@@ -25,30 +23,8 @@ const Footer = () => {
         <Typography variant="body1" color="text.secondary" >
             Bogotá - Colombia
         </Typography>
-
-      {/*<CardContent sx={{ py:{xs: "4px"}, border:"solid 2px darkgrey"}}>
-        <Typography variant="body2" color="text.primary" >
-            Bogotá - Colombia
-        </Typography>
-      </CardContent>*/}
     </Card>
   )
 }
 
 export default Footer
-
-
-//{/*<Typography sx={{
-//    fontSize: {xs:"1em", sm:"1.7em", md:"2.1em", lg:"2.6em"},
-//    color:"white",
-//    p:{ xs:"0%", sm:"1%", md:"1%"},
-//    mt:{ xs:"0px", sm:"1px", md:"1px"},
-    
-//    //position:"absolute",
-//    //top:{ xs:"40%", sm:"25%", md:"40%"},
-//    //left:{ xs:"5%", sm:"12%", lg:"25%"},
-//    //right:{ xs:"5%", sm:"10%"},
-//    }}> 
-
-
-// </Typography>*/}

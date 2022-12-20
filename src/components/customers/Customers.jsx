@@ -25,6 +25,44 @@ const imgCust = [
   }
 ]
 
+const imgParth = [
+  {
+    label: "dji",
+    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671487193/evotech/Custommers/Partners/dji_btnret.png",
+    imgSmall: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671499456/evotech/Custommers/Partners/100px/dji_s1vv6j.png"
+  },
+  {
+    label: "tems",
+    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671487193/evotech/Custommers/Partners/Tems_dcwk6b.png",
+    imgSmall: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671499456/evotech/Custommers/Partners/100px/Tems_zbj4h8.png"
+  },
+  {
+    label: "pctel",
+    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671487193/evotech/Custommers/Partners/pctel_qbubq6.jpg",
+    imgSmall: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671499639/evotech/Custommers/Partners/100px/pctel_pisrjt.jpg"
+  },
+  {
+    label: "teoco",
+    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671487193/evotech/Custommers/Partners/teoco_ipq11u.png",
+    imgSmall: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671499456/evotech/Custommers/Partners/100px/teoco_urhxvn.png"
+  },
+  {
+    label: "nemo",
+    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671487193/evotech/Custommers/Partners/Nemo_nklcsf.png",
+    imgSmall: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671499456/evotech/Custommers/Partners/100px/Nemo_sslrwu.png"
+  },
+  {
+    label: "anritsu",
+    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671487193/evotech/Custommers/Partners/Anritsu_ntgi9d.png",
+    imgSmall: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671499456/evotech/Custommers/Partners/100px/Anritsu_orl0wx.png"
+  },
+  {
+    label: "garmin",
+    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671487193/evotech/Custommers/Partners/garmin_dkksnt.png",
+    imgSmall: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671499456/evotech/Custommers/Partners/100px/garmin_b4ficw.png"
+  }
+
+]
 const Customers = () => {
   return (
     <div
@@ -46,7 +84,8 @@ const Customers = () => {
         <Typography gutterBottom variant="h4" 
           component="div"
           sx={{
-            pt: {xs:"42px", sm:"40px"},
+            fontSize:{xs:"1.8em", sm:"2.0em", md:"2.4em", lg:"3em"},
+            pt: {xs:"18px", sm:"40px"},
             textAlign:{xs:"center"},
             color: "white"
           }}
@@ -56,10 +95,11 @@ const Customers = () => {
 
         <Box 
           sx={{
-            maxWidth: 790,
+            //maxWidth: 790,
+            maxWidth: {xs:"340px", sm:"590px", md:"900px", lg:"1200px"},
             m: 'auto',
             backgroundColor: "transparent",
-            display:{ xs: "block", md:"flex" },
+            display:{ xs: "flex", md:"flex" },
             pt:1,
             pb:1,
             
@@ -76,13 +116,34 @@ const Customers = () => {
         <Typography gutterBottom variant="h4" 
           component="div"
           sx={{
+            fontSize:{xs:"1.8em", sm:"2.0em", md:"2.4em", lg:"3em"},
             pt: {xs:"42px", sm:"40px"},
             textAlign:{xs:"center"},
-            color: "white"
+            color: "blue"
           }}
         >
-          Nuestros parthers
-        </Typography>            
+          Nuestro equipo
+        </Typography>
+        <Box 
+          sx={{
+            maxWidth: {xs:"340px", sm:"599px"},
+            m: 'auto',
+            backgroundColor: "transparent",
+            display:{ xs: "flex", md:"flex" },
+            pt:"30px",
+            pb:"30px",
+            //mb:"20px",
+            flexWrap: {xs:"wrap", sm:"no wrap"},
+            //border: {xs:"solid 2px red", sm:"none"},
+            height: {md:"65vh"}
+          }}>
+              {
+                imgParth.map(imag => (
+                  <CustomerCard imag={imag} key={imag.label}/>
+                ))
+              }
+
+        </Box>            
       </div>
 
     </div>
