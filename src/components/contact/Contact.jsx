@@ -37,7 +37,8 @@ const Contact = () => {
       };
 
       //emailjs.send('service_rxdex6n','template_dcomid5', templateParams, '_xNTJSBnYLKp9i9sc')
-      emailjs.send('service_3k547da','template_hj1jg05', templateParams, 'NnagG_4iDnNH6SIyl')
+      //emailjs.send('service_3k547da','template_hj1jg05', templateParams, 'NnagG_4iDnNH6SIyl')
+      emailjs.send('service_digmwhl','template_hj1jg05', templateParams, 'NnagG_4iDnNH6SIyl')
   	  .then((response) => { console.log('SUCCESS!', response.status, response.text);
         }, (err) => { console.log('FAILED...', err);
   	  });

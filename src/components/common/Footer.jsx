@@ -6,9 +6,6 @@ const Footer = () => {
   return (
     //<Card sx={{ maxWidth: 345, m:"4px", p:"8px", border:"solid 2px lightgrey", display:"flex", flexDirection:"column", alignItems:"center" }} >
     <Card sx={{ maxWidth: 345, m:"4px", p:"8px", display:"flex", flexDirection:"column", alignItems:"center" }} >
-        <Typography variant="body3" fontSize=".8em" color="text.secondary" sx={{ pb:{xs: "0px"}}}>
-            +57 3108126624
-        </Typography>
         <Typography variant="body3" fontSize=".8em" color="text.secondary">
             +57 3058175019
         </Typography>
