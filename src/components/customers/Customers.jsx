@@ -10,21 +10,44 @@ import CustomerCard from './CustomerCard';
 const imgCust = [
   {
     label: "entel",
-    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1669851871/evotech/Custommers/entel-130x130-rbg_ricfyg.png",
-    imgSmall: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671309817/evotech/Custommers/entel-110x110_bmfcma.png",
-    imgLg: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671534947/evotech/Custommers/220x220/entel_220x220-bg_picwwf.png"
+    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671746252/evotech/Custommers/130px/entel_130x130_txlola.png",
+    imgSmall: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671745931/evotech/Custommers/110px/entel_110x110_wu3amw.png",
+    imgLg: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671746426/evotech/Custommers/160px/entel_160x160_kfwver.png"
+    //imgLg: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671534947/evotech/Custommers/220x220/entel_220x220-bg_picwwf.png"
   },
   {
     label: "movistar",
-    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1669851871/evotech/Custommers/movistar_130x130-rbg_t2dyki.png",
-    imgSmall: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671309817/evotech/Custommers/movistar_110x110_mmtzlo.png",
-    imgLg: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671534947/evotech/Custommers/220x220/movistar_220x220-bg_kqeexj.png"
+    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671746252/evotech/Custommers/130px/movistar_130x130_an5k0s.png",
+    imgSmall: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671745931/evotech/Custommers/110px/movistar_110x110_sf7gkm.png",
+    imgLg: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671746426/evotech/Custommers/160px/movistar_160x160_tvan09.png"
+    //imgLg: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671534947/evotech/Custommers/220x220/movistar_220x220-bg_kqeexj.png"
   },
   {
     label: "claro",
-    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1669851871/evotech/Custommers/claro_130x130-rbg_kkzmmh.png",
-    imgSmall: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671309817/evotech/Custommers/claro_110x110_foua4c.png",
-    imgLg: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671534947/evotech/Custommers/220x220/claro_220x220-bg_opwtck.png"
+    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671746252/evotech/Custommers/130px/claro_130x130_fhyq9x.png",
+    imgSmall: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671745931/evotech/Custommers/110px/claro_110x110_p5qvwo.png",
+    imgLg: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671746426/evotech/Custommers/160px/claro_160x160_yn5deq.png"
+    //imgLg: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671738616/evotech/Custommers/220x220/claro_220x220-bg_cjx9ho.png"
+  },
+  {
+    label: "tigo",
+    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671746252/evotech/Custommers/130px/tigo_hszpuj.png",
+    imgSmall: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671745931/evotech/Custommers/110px/tigo_110x110_vxqg4u.png",
+    //imgLg: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671727750/evotech/Custommers/220x220/tigo-removebg-preview_u3de4j.png"
+    imgLg: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671746426/evotech/Custommers/160px/tigo_160x160_nqrjgb.png"
+  },
+  {
+    label: "virginMobile",
+    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671746252/evotech/Custommers/130px/VirginMobile130x130_zhkbv8.jpg",
+    imgSmall: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671745932/evotech/Custommers/110px/VirginMobile_110x110_j7uwdc.jpg",
+    imgLg: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671746426/evotech/Custommers/160px/VirginMobile_160x160_n03je8.jpg"
+    //imgLg: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671727603/evotech/Custommers/220x220/Virgin_220x220_x1vx93.png"
+  },
+  {
+    label: "Wom",
+    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671746252/evotech/Custommers/130px/wom_130x130_prxive.png",
+    imgSmall: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671745932/evotech/Custommers/110px/wom_110x110_ejqkxe.png",
+    imgLg: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671746426/evotech/Custommers/160px/wom_160x160_mtxzdb.png"
   }
 ]
 
@@ -70,6 +93,24 @@ const imgParth = [
     imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671529106/evotech/Custommers/Partners/170px/garmin_u8bux2.png",
     imgSmall: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671529460/evotech/Custommers/Partners/100px/garminm_pqltte.png",
     imgLg: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671537578/evotech/Custommers/Partners/200x200/garmin_ql3nxg.png"
+  },
+  {
+    label: "infoVista",
+    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671748497/evotech/Custommers/Partners/170px/InfoVista_gf3amc.jpg",
+    imgSmall: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671748222/evotech/Custommers/Partners/100px/InfoVista_a1szfg.jpg",
+    imgLg: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671748591/evotech/Custommers/Partners/200x200/InfoVista_uu6nfb.jpg"
+  },
+  {
+    label: "keysight",
+    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671748497/evotech/Custommers/Partners/170px/keysight1_c0gdbu.png",
+    imgSmall: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671748222/evotech/Custommers/Partners/100px/keysight1_bgp8gg.png",
+    imgLg: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671748591/evotech/Custommers/Partners/200x200/keysight1_qmzbcr.png"
+  },
+  {
+    label: "luxCarta",
+    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671748497/evotech/Custommers/Partners/170px/LuxCarta_kx7ald.jpg",
+    imgSmall: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671748222/evotech/Custommers/Partners/100px/LuxCarta_xsxrz0.jpg",
+    imgLg: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671748591/evotech/Custommers/Partners/200x200/LuxCarta_qb5guy.jpg"
   }
 
 ]
@@ -100,13 +141,18 @@ const Customers = () => {
         <Box 
           sx={{
             //maxWidth: 790,
-            maxWidth: {xs:"340px", sm:"590px", md:"900px", lg:"1200px"},
+            maxWidth: {xs:"340px", sm:"590px", md:"900px", lg:"610px"},
             m: 'auto',
             backgroundColor: "transparent",
-            display:{ xs: "flex", md:"flex" },
-            pt:1,
-            pb:1,
-            height: {md:"40vh"}
+            display:"flex", md:"flex" ,
+            //flexDirection:"column",
+            justifyContent:"start",
+            flexWrap:{xs:"wrap"},
+            //displayWrap:"no wrap",
+            p:"0px",
+            //pb:"10px",
+            //border:"solid 2px red",
+            //height: {md:"40vh"}
           }}>
               {
                 imgCust.map(imag => (
