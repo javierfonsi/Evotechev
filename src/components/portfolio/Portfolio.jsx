@@ -13,15 +13,15 @@ const imgServices= [
   },
   {
     id:2,
-    title: "IBS (In Building solution)",
-    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671642316/evotech/Portfolio/IBS_o5mijx.jpg",
-    description: "Proporciona cobertura en interiores utilizando un sistema de antenas distribuidas, lo cual permite mejor conectividad, para esto ofrecemos servicio de planeación implementación y monitoreo de antes y después del proyecto."
-  },
+    title: "OPTIMIZACIÓN RF",
+    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671571517/evotech/Portfolio/SiteSurvey_du7p42.jpg",
+    description: "La optimización de los sitios se logra haciendo cambios físicos azimut, tilt eléctrico, tilt mecánico y cambio de altura de antenas."
+},
   {
     id:3,
     title: "POST PROCESO",
     imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671571517/evotech/Portfolio/PostProceso_xzzeta.jpg",
-    description: "Permite analizar a profundidad los datos recolectados luego de llevar a cabo el proceso de drive test, esto le permite al cliente final identificar y corregir falencias en cobertura, accesibilidad y continuidad del servicio"
+    description: "Permite analizar a profundidad los datos recolectados luego de llevar a cabo el proceso de drive test, esto le permite al cliente final identificar y corregir falencias en cobertura, accesibilidad y continuidad del servicio."
   },
   {
     id:4,
@@ -37,27 +37,29 @@ const imgServices= [
   },
   {
     id:6,
-    title: "SIMULACIONES DE RADIOFRECUENCIA",
-    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671571517/evotech/Portfolio/SimulacionesDeRadioFrecuencia_qbdboe.jpg",
-    description: "Mediante herramientas apropiadas como cartografía y software especializado, usando parametros adecuados, con modelos de propagación y cartografía."
-  },
-  {
-    id:7,
+    //title: "SIMULACIONES DE RADIOFRECU",
     title: "ESTUDIOS CON DRONES",
     imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671571517/evotech/Portfolio/EstudiosConDrones_rgba7t.jpg",
     description: "Estos son utilizadas para viabilidad de búsqueda de sitios y verificación de torres."
   },
   {
+    id:7,
+    title: "SIMULACIONES DE RADIOFRECUENCIA",
+    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671571517/evotech/Portfolio/SimulacionesDeRadioFrecuencia_qbdboe.jpg",
+    description: "Mediante herramientas apropiadas como cartografía y software especializado, usando parametros adecuados, con modelos de propagación y cartografía."
+  },
+  {
     id:8,
-    title: "OPTIMIZACIÓN RF",
-    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671571517/evotech/Portfolio/SiteSurvey_du7p42.jpg",
-    description: "La optimización de los sitios se logra haciendo cambios físicos azimut, tilt eléctrico, tilt mecánico y cambio de altura de antenas."
+    title: "SITE SURVEY",
+    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671571516/evotech/Portfolio/Optimizaci%C3%B3nRf_nlogs6.jpg",
+    description: "Las inspecciones de campo (Site Survey) en el área donde se formule su proyecto, se harán para grantizar la recolección de la información más precisa para la planeación, diseño o desarrollo del mismo."
   },
   {
     id:9,
-    title: "SITE SURVEY",
-    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671571516/evotech/Portfolio/Optimizaci%C3%B3nRf_nlogs6.jpg",
-    description: "Las inspecciones de campo (Site Survey) en el área donde se formule su proyecto, se harán para grantizar la recolección de la información más precisa para la planeación, diseño o desarrollo del mismo"
+    title: "IBS (In Building solution)",
+    imgPath: "https://res.cloudinary.com/dzkp92nfz/image/upload/v1671642316/evotech/Portfolio/IBS_o5mijx.jpg",
+    description: "Proporciona cobertura en interiores, utilizando un sistema de antenas distribuidas, las cuales permiten mejor conectividad, para esto ofrecemos servicio de planeación, implementación, monitoreo de antes y después del proyecto."
+  
   }
 ]
 
@@ -71,7 +73,6 @@ const Portfolio = () => {
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        //border: "solid 2px red",
         //height:{xs:"300vh", lg:"141vh"}
       }}
       >
@@ -80,7 +81,7 @@ const Portfolio = () => {
         <Typography gutterBottom variant="h4" 
           component="div"
           sx={{
-            pt: {xs:"32px", sm:"40px"},
+            pt: {xs:"36px", sm:"40px"},
             textAlign:{xs:"center"},
             color: "white"
             //</div>m: {xs:"0-auto", sm:"40px"}
@@ -91,16 +92,17 @@ const Portfolio = () => {
       
         <Box 
           sx={{
-            maxWidth: {xs:"720px", sm:"780px", md:"900px", lg:"1200px"},
-            m: 'auto',
+            maxWidth: {xs:"620px", sm:"885px", md:"1140px", lg:"1350px"},
+            m: {xs: '0 auto', sm:"0 10px 0px 0px"},
             backgroundColor: "transparent",
             display:{ xs: "flex", lg:"flex" },
-            justifyContent:{xs:"center", md:"end"},
+            justifyContent:{xs:"center", sm:"end", lg:"end"},
             flexWrap:{xs:"wrap"},
             pt:"10px",
-            mr:"10px",
-            pb:1,
-            height: {md:"234vh"}
+            //height: {md:"248vh"},
+            //mr:"10px",
+            //pl:"10px",
+            //border: "solid 2px red",
           }}>
               {
                 imgServices.map(imag => (
