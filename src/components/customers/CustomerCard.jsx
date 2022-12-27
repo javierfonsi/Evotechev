@@ -5,16 +5,16 @@ const CustomerCard = ({imag}) => {
   return (
     <Card
           sx={{
-            maxWidth: {xs: "110px", md:"200px", lg:"335px"},
+            maxWidth: {xs: "100px", sm:"200px", md:"240px", lg:"335px"},
             //height:350,
-            mx:"5px",
-            my:"5px",
+            ml:{xs:'10px', sm:"0px"},
+            mr:{xs:"2px", sm:"29px", lg:"50px"},
+            my:"10px",
             p:"0px",
             backgroundColor: "transparent",
             color: "white", 
             border:"none",
-            borderRadius:"50%"
-            //border:"solid 2px red"
+            borderRadius:{xs:"55px", md:"65px"},
           }}
         >
 
@@ -23,16 +23,17 @@ const CustomerCard = ({imag}) => {
             src={imag?.imgSmall} alt={imag?.label}
              />
           </Box>
-          <Box sx={{ display: {xs: "none", md:"flex", lg:"none"}}}>
+          <Box sx={{ display: {xs: "none",  md:"flex"}}}>
             <img 
-            src={imag?.imgPath} alt={imag?.label}
+            src={imag?.imgPath} alt={imag?.label} 
              />
           </Box>
-          <Box sx={{ display: {xs: "none", lg:"flex"}, width:"160px", height:"160px"}}>
+          
+          {/*<Box sx={{ display: {xs: "none", lg:"flex"}, width:"160px", height:"160px"}}>
             <img 
             src={imag?.imgLg} alt={imag?.label}
              />
-          </Box>
+          </Box>*/}
 
         </Card>
   )
